@@ -1,0 +1,19 @@
+<div class="pdf-container">
+    <div class="pdf-card" *ngFor="let pdf of pdfSrc; let i = index">
+      <!-- PDF Preview -->
+      <iframe class="pdf-preview" [src]="pdf"></iframe>
+      
+      <!-- PDF Details -->
+      <div class="pdf-details">
+        <p class="pdf-line">Quotation-{{ i + 1 }}.pdf</p>
+        <div class="pdf-footer">
+          <img src="../../../assets/pdf-icon.png" alt="PDF Icon" class="pdf-icon" />
+          <span>{{ pdfFiles[i].name }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- File Upload -->
+  <input type="file" (change)="onFileSelected($event)" accept="application/pdf" multiple />
+  

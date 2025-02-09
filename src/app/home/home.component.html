@@ -5,7 +5,7 @@
             <div>
                 <label for="theme" class="block text-gray-600 font-medium mb-2">Theme:</label>
                 <select
-                    class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                    class="w-full p-2 text-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" 
                     name="theme" id="theme" [(ngModel)]="preferences.theme">
                     <option value="" disabled selected class="bg-blue-500 text-white">Select your theme</option>
                     <option value="light">Light</option>
@@ -16,7 +16,7 @@
             <div>
                 <label for="language" class="block text-gray-600 font-medium mb-2">Language:</label>
                 <select name="language" id="language" [(ngModel)]="preferences.language"
-                    class="border border-gray-300 w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    class="border border-gray-300 text-black w-full p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="" disabled selected>Select your language</option>
                     <option value="en">English</option>
                     <option value="fr">French</option>
