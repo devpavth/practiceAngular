@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './components/crud/admin/admin.component';
 import { PdfComponent } from './components/pdf/pdf.component';
+import { UploadPdfComponent } from './components/upload-pdf/upload-pdf.component';
 
 const routes: Routes = [
   { 
@@ -10,6 +11,10 @@ const routes: Routes = [
   {
     path: 'pdf',
     component: PdfComponent
+  },
+  {
+    path: 'uploadPdf',
+    component: UploadPdfComponent
   },
   {
     path: 'admin',

@@ -9,18 +9,22 @@ import { FormsModule } from '@angular/forms';
 import { PdfComponent } from './components/pdf/pdf.component';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { UploadPdfComponent } from './components/upload-pdf/upload-pdf.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    PdfComponent
+    PdfComponent,
+    UploadPdfComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxExtendedPdfViewerModule
+    NgxExtendedPdfViewerModule,
+    ReactiveFormsModule
   ],
   providers: [
     StudentService,
