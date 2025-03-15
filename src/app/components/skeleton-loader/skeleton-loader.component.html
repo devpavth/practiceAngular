@@ -1,0 +1,36 @@
+<div class="max-w-sm w-full p-4 border rounded-lg shadow-md bg-white">
+    
+    <div *ngIf="loader" class="space-y-4">
+        <div class="w-full h-40 bg-gray-300 animate-pulse rounded-md">
+        </div>
+        <div class="h-6 bg-gray-300 animate-pulse rounded-md w-3/4"></div>
+        <div class="h-4 bg-gray-300 animate-pulse rounded-md w-full"></div>
+        <div class="h-4 bg-gray-300 animate-pulse rounded-md w-5/6"></div>
+    </div>
+
+    <div *ngIf="!loader" class="space-y-4">
+        <img src="https://source.unsplash.com/400x300/?nature" alt="Nature" class="w-full h-40 rounded-md">
+        <h2 class="text-lg font-semibold">Beautiful Nature</h2>
+    <p class="text-gray-600">Explore the beauty of nature with our handpicked collection of amazing landscapes.</p>
+    </div>
+</div>
+
+
+
+<div class="space-y-4">
+    <div class="flex items-center space-x-4">
+        <div class="w-12 h-12 bg-gray-300 animate-pulse rounded-full"></div>
+        <div class="flex-1 space-y-2">
+            <div class="h-4 bg-gray-300 animate-pulse rounded-md w-3/4"></div>
+            <div class="h-4 bg-gray-300 animate-pulse rounded-md w-1/2"></div>
+        </div>
+    </div>
+
+    <div class="flex items-center space-x-4">
+        <div class="w-12 h-12 bg-gray-300 animate-pulse rounded-full"></div>
+        <div class="flex-1 space-y-2">
+            <div class="h-4 bg-gray-300 animate-pulse rounded-md w-3/4"></div>
+            <div class="h-4 bg-gray-300 animate-pulse rounded-md w-1/2"></div>
+        </div>
+    </div>
+</div>
